@@ -4,14 +4,15 @@ body {
 }
 
 .container {
+  display: block;
+  margin: 15px auto;
   max-width: 375px;
   max-height: 750px;
   background: rgba(255, 255, 255, 0.75);
   padding: 20px;
-  margin: 30px auto;
   border-radius: 20px;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
-  font-size: 20px;
+  font-size: 14px;
   font-family: "Nunito", sans-serif;
 }
 h1 {
@@ -43,8 +44,8 @@ input[type="text"] {
   font-size: 16px;
   border-radius: 60px;
   border-color: black;
-  padding: 10px 24px;
-  width: 250px;
+  padding: 10px 12px;
+  width: 225px;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
 }
 
@@ -54,7 +55,7 @@ input[type="submit"] {
   border: 0px;
   color: black;
   border-radius: 60px;
-  padding: 10px 16px;
+  padding: 10px 12px;
   transition: all 350ms ease-in-out;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
   font-size: 16px;
@@ -70,7 +71,7 @@ input::placeholder {
 button {
   display: block;
   margin: 0px auto;
-  margin-top: -15px;
+  margin-top: 10px;
   background: rgba(173, 127, 147, 0.8);
   border: 0px;
   color: black;
@@ -199,27 +200,37 @@ button:hover {
   right: -56px;
 }
 .weather-box {
+  display: block;
+  margin: 0 auto;
   text-align: center;
-  font-size: 16px;
   color: black;
-  padding: 10px;
+  padding: 5px;
   background-color: rgba(255, 255, 255, 0.6);
   border-radius: 20px;
-  margin: 2.5px;
-  max-width: 250px;
-  max-height: 800px;
-  position: relative;
-  left: 7px;
+  margin: 0.5px;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
 }
 .forecast-container {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
   background-color: rgba(234, 182, 169, 0.8);
-  padding: 15px;
-  border-radius: 25px;
-  margin: 5px;
-  max-width: 250px;
-  max-height: 3000px;
+  padding: 5px;
+  border-radius: 20px;
   box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.2);
+}
+
+.forecast-date {
+  font-size: 16px;
+}
+
+.forecast-temperature-min {
+  font-size: 13px;
+  opacity: 0.7;
+}
+
+.forecast-temperature-max {
+  font-size: 13px;
 }
 
 .last-updated {
