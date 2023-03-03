@@ -1,0 +1,266 @@
+body {
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/064/238/original/pastel-colors-light-japanese-design-minimal-abstract-wallpaper.jpg?1674538886);
+  background-size: cover;
+}
+
+.container {
+  max-width: 600px;
+  max-height: 750px;
+  background: rgba(255, 255, 255, 0.75);
+  padding: 20px;
+  margin: 30px auto;
+  border-radius: 20px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+  font-size: 20px;
+  font-family: "Nunito", sans-serif;
+}
+h1 {
+  color: black;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 28px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 5px;
+  border-radius: 25px;
+  margin: 15px auto;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+input[type="text"] {
+  margin: 0 auto;
+  background-color: rgba(234, 182, 169, 0.8);
+  color: black;
+  border: 0px;
+  font-size: 18px;
+  border-radius: 60px;
+  border-color: black;
+  padding: 10px 24px;
+  width: 250px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+input[type="submit"] {
+  margin: 0 auto;
+  background-color: rgba(181, 205, 195, 0.9);
+  border: 0px;
+  color: black;
+  border-radius: 60px;
+  padding: 10px 24px;
+  transition: all 350ms ease-in-out;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+  font-size: 18px;
+}
+input:hover[type="submit"] {
+  background: white;
+}
+input::placeholder {
+  opacity: 0.9;
+  color: black;
+}
+
+button {
+  display: block;
+  margin: 0px auto;
+  margin-top: -15px;
+  background: rgba(173, 127, 147, 0.8);
+  border: 0px;
+  color: black;
+  border-radius: 60px;
+  font-size: 14px;
+  padding: 4px 18px;
+  transition: all 150ms ease-in-out;
+  text-align: center;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+.location-condition-container {
+  background-color: rgba(173, 127, 147, 0.7);
+  border-radius: 25px;
+  padding: 10px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  height: 115px;
+}
+
+.city-searched {
+  text-align: left;
+  font-size: 20px;
+  color: black;
+  padding-left: 10px;
+}
+.temperature-box {
+  text-align: left;
+  font-size: 25px;
+  color: black;
+  padding-left: 10px;
+}
+
+.current-condition {
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 16px;
+  color: black;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 25px;
+  margin: 5px;
+  margin-right: -80px;
+  width: 300px;
+  height: 90px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.condition-icon {
+  width: 20%;
+  height: 20%;
+  text-align: center;
+  padding: 5px;
+  margin: 5px;
+  margin-right: 15px;
+  position: relative;
+  top: 25px;
+  right: 40px;
+}
+
+.temperature {
+  font-size: 40px;
+}
+
+.humidity {
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  font-size: 18px;
+  color: black;
+  padding: 10px;
+  background-color: rgba(181, 205, 195, 0.8);
+  border-radius: 25px;
+  width: 200px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.humidity-data {
+  display: block;
+  margin: 0 auto;
+  font-size: 18px;
+  padding: 5px;
+  color: black;
+  background-color: rgba(181, 205, 195, 0.99);
+  border-radius: 25px;
+  padding-right: 18px;
+  width: 75px;
+  height: 36px;
+  text-align: right;
+  position: relative;
+  top: -41px;
+  right: -56px;
+}
+
+.wind {
+  display: block;
+  margin: 0 auto;
+  font-size: 18px;
+  font-size: 18px;
+  color: black;
+  padding: 10px;
+  padding-right: 38px;
+  background-color: rgba(173, 127, 147, 0.8);
+  border-radius: 25px;
+  width: 200px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+}
+.wind-data {
+  display: block;
+  margin: 0 auto;
+  font-size: 18px;
+  padding: 5px;
+  font-size: 18px;
+  color: black;
+  background-color: rgba(173, 127, 147, 0.99);
+  border-radius: 25px;
+  width: 75px;
+  height: 36px;
+  text-align: center;
+  position: relative;
+  top: -41px;
+  right: -56px;
+}
+.weather-box {
+  text-align: center;
+  font-size: 16px;
+  color: black;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 20px;
+  margin: 2.5px;
+  max-width: 250px;
+  max-height: 800px;
+  position: relative;
+  left: 7px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+}
+.forecast-container {
+  background-color: rgba(234, 182, 169, 0.8);
+  padding: 15px;
+  border-radius: 25px;
+  margin: 5px;
+  max-width: 250px;
+  max-height: 3000px;
+  box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.2);
+}
+
+.last-updated {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 16px;
+}
+
+.search-icon {
+  color: white;
+  position: relative;
+  left: -155px;
+}
+
+.location-icon {
+  color: white;
+}
+
+.rain-icon {
+  color: white;
+}
+
+.therm-icon {
+  color: white;
+}
+.wind-icon {
+  color: white;
+}
+
+.temperature-box .active {
+  color: black;
+  cursor: default;
+}
+
+temperature-box .active:hover {
+  text-decoration: none;
+}
+
+.units {
+  position: relative;
+  top: -15px;
+  font-size: 14px;
+}
