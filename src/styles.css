@@ -29,7 +29,7 @@ h2 {
   text-align: center;
   font-size: 14px;
   color: black;
-  background-color: rgba(181, 205, 195, 0.3);
+  background-color: rgba(181, 205, 195, 0.4);
   padding: 5px;
   border-radius: 10px;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
@@ -52,7 +52,7 @@ input[type="submit"] {
   margin: 0 auto;
   margin-left: 10px;
   height: 40px;
-  background-color: rgba(181, 205, 195, 0.5);
+  background-color: rgba(181, 205, 195, 0.4);
   color: black;
   text-align: center;
   border: 0px;
@@ -76,7 +76,7 @@ button {
   display: block;
   margin: 0px auto;
   margin-top: -15px;
-  background: rgba(173, 127, 147, 0.5);
+  background: rgba(173, 127, 147, 0.4);
   border: 0px;
   color: black;
   border-radius: 15px;
@@ -92,7 +92,7 @@ button:hover {
 }
 
 .location-condition-container {
-  background-color: rgba(173, 127, 147, 0.5);
+  background-color: rgba(173, 127, 147, 0.4);
   border-radius: 15px;
   padding: 10px;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
@@ -122,7 +122,7 @@ button:hover {
   font-size: 16px;
   color: black;
   padding: 8px;
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.5);
   border-radius: 15px;
   margin: 1px;
   margin-right: -75px;
@@ -166,7 +166,7 @@ button:hover {
   font-size: 14px;
   padding: 2px;
   color: black;
-  background-color: rgba(181, 205, 195, 0.5);
+  background-color: rgba(181, 205, 195, 0.6);
   border-radius: 15px;
   width: 80px;
   text-align: center;
@@ -193,7 +193,7 @@ button:hover {
   font-size: 14px;
   padding: 2px;
   color: black;
-  background-color: rgba(173, 127, 147, 0.5);
+  background-color: rgba(173, 127, 147, 0.6);
   border-radius: 15px;
   width: 80px;
   text-align: center;
@@ -208,7 +208,7 @@ button:hover {
   text-align: center;
   color: black;
   padding: 5px;
-  background-color: rgba(234, 182, 169, 0.4);
+  background-color: rgba(234, 182, 169, 0.5);
   border-radius: 5px;
   margin: 0px;
   width: 48px;
@@ -261,7 +261,7 @@ button:hover {
 
 .units {
   position: relative;
-  top: -15px;
+  top: -10px;
   font-size: 20px;
 }
 
