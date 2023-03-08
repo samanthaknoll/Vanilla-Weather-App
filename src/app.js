@@ -40,32 +40,49 @@ if (minutes < 10) {
 let dayTime = document.querySelector("h2");
 dayTime.innerHTML = `Last Updated: ${day}, ${month} ${date} at ${hours}:${minutes}`;
 
+///Forecast Dates
+function formatDay(timestamp) {
+  let date = new Date(timestamp * 1000);
+  let day = date.getDay();
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+  return days[day];
+}
+
 /// Daily Forecast
 function displayForecast(response) {
-  console.log(response.data.daily);
+  let forecast = response.data.daily;
   let forecastElement = document.querySelector("#forecast");
 
   let forecastHTML = `<div class="row">`;
-  let days = ["Thu", "Fri", "Sat", "Sun"];
-  days.forEach(function (day) {
-    forecastHTML =
-      forecastHTML +
-      `
+  forecast.forEach(function (forecastDay, index) {
+    if (index < 6) {
+      forecastHTML =
+        forecastHTML +
+        `
   <div class="col-2">
-      <div class="forecast-date"> ${day}</div>
-      <img src="https://cdn-icons-png.flaticon.com/512/169/169367.png" alt="image" width="40px" />
+      <div class="forecast-date"> ${formatDay(forecastDay.dt)}</div>
+      <img src="http://openweathermap.org/img/wn/${
+        forecastDay.weather[0].icon
+      }@2x.png" alt="image" width="40px" />
      <div> 
-     <span class="forecast-temperature-max"> 12° </span> 
-     <span class="forecast-temperature-min"> 10° </span>  
+     <span class="forecast-temperature-max"> ${Math.round(
+       forecastDay.temp.max
+     )}° </span> 
+     <span class="forecast-temperature-min"> ${Math.round(
+       forecastDay.temp.min
+     )}° </span>  
      </div>
     </div>
     `;
+    }
   });
 
   forecastHTML = forecastHTML + `</div>`;
   forecastElement.innerHTML = forecastHTML;
   console.log(forecastHTML);
 }
+let fahrenheitTemperature = null;
 
 /// Update City Name and Weather
 function displayWeatherCondition(response) {
@@ -121,7 +138,6 @@ let searchForm = document.querySelector("#city-form");
 searchForm.addEventListener("submit", handleSubmit);
 
 searchCity("New York");
-displayForecast();
 
 /// Current Location Button
 function searchLocation(position) {
@@ -130,7 +146,7 @@ function searchLocation(position) {
   let latitude = position.coords.latitude;
   let longitude = position.coords.longitude;
 
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=${units}`;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=${units}`;
   console.log(apiUrl);
   axios.get(apiUrl).then(displayWeatherCondition);
 }
@@ -162,7 +178,6 @@ function convertToCelsius(event) {
   console.log(fahrenheitTemperature, celsiusTemperature);
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
-let fahrenheitTemperature = null;
 
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", displayFahrenheit);
