@@ -1,7 +1,7 @@
 body {
   background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/064/238/original/pastel-colors-light-japanese-design-minimal-abstract-wallpaper.jpg?1674538886);
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
 }
 
 .container {
