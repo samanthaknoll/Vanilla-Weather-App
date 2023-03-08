@@ -1,6 +1,7 @@
 body {
   background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/064/238/original/pastel-colors-light-japanese-design-minimal-abstract-wallpaper.jpg?1674538886);
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .container {
@@ -37,7 +38,7 @@ h2 {
 
 input[type="text"] {
   margin: 5 auto;
-  background-color: rgba(234, 182, 169, 0.5);
+  background-color: rgba(234, 182, 169, 0.6);
   color: black;
   border: 0px;
   font-size: 15px;
@@ -76,7 +77,7 @@ button {
   display: block;
   margin: 0px auto;
   margin-top: -15px;
-  background: rgba(173, 127, 147, 0.4);
+  background: rgba(173, 127, 147, 0.5);
   border: 0px;
   color: black;
   border-radius: 15px;
@@ -92,7 +93,7 @@ button:hover {
 }
 
 .location-condition-container {
-  background-color: rgba(173, 127, 147, 0.4);
+  background-color: rgba(173, 127, 147, 0.5);
   border-radius: 15px;
   padding: 10px;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
