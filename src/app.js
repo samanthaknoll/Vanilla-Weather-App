@@ -82,7 +82,6 @@ function displayForecast(response) {
   forecastElement.innerHTML = forecastHTML;
   console.log(forecastHTML);
 }
-let fahrenheitTemperature = null;
 
 /// Update City Name and Weather
 function displayWeatherCondition(response) {
@@ -158,29 +157,3 @@ function getCurrentLocation(event) {
 
 let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
-
-/// Display Farenheit
-function displayFahrenheit(event) {
-  event.preventDefault();
-  fahrenheitLink.classList.add("active");
-  celsiusLink.classList.remove("active");
-  let temperatureElement = document.querySelector("#main-temp");
-  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
-}
-
-/// Change F to C
-function convertToCelsius(event) {
-  event.preventDefault();
-  let temperatureElement = document.querySelector("#main-temp");
-  fahrenheitLink.classList.remove("active");
-  celsiusLink.classList.add("active");
-  let celsiusTemperature = ((fahrenheitTemperature - 32) * 5) / 9;
-  console.log(fahrenheitTemperature, celsiusTemperature);
-  temperatureElement.innerHTML = Math.round(celsiusTemperature);
-}
-
-let fahrenheitLink = document.querySelector("#fahrenheit-link");
-fahrenheitLink.addEventListener("click", displayFahrenheit);
-
-let celsiusLink = document.querySelector("#celsius-link");
-celsiusLink.addEventListener("click", convertToCelsius);
