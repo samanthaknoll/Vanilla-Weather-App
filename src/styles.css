@@ -7,7 +7,6 @@ body {
   display: block;
   margin: 15px auto;
   max-width: 375px;
-  max-height: 750px;
   background: rgba(255, 255, 255, 0.75);
   padding: 15px;
   border-radius: 15px;
@@ -18,21 +17,21 @@ body {
 h1 {
   color: black;
   text-align: center;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 700;
   line-height: 28px;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
 }
 
 h2 {
   display: block;
+  margin: 15px auto;
   text-align: center;
   font-size: 14px;
   color: black;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(234, 182, 169, 0.7);
   padding: 5px;
-  border-radius: 15px;
-  margin: 15px auto;
+  border-radius: 10px;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
 }
 
@@ -73,12 +72,12 @@ input::placeholder {
 button {
   display: block;
   margin: 0px auto;
-  margin-top: 10px;
+  margin-top: -14px;
   background: rgba(173, 127, 147, 0.8);
   border: 0px;
   color: black;
   border-radius: 15px;
-  font-size: 14px;
+  font-size: 12px;
   padding: 4px 18px;
   transition: all 150ms ease-in-out;
   text-align: center;
@@ -98,21 +97,21 @@ button:hover {
 
 .city-searched {
   text-align: left;
-  font-size: 20px;
+  font-size: 18px;
   color: black;
-  padding-left: 10px;
+  padding-left: 12px;
 }
 .temperature-box {
   text-align: left;
   font-size: 30px;
   color: black;
-  padding-left: 20px;
+  padding-left: 12px;
 }
 
 .current-condition {
   text-transform: capitalize;
   text-align: center;
-  font-size: 20px;
+  font-size: 18px;
   color: black;
   padding: 4px;
   background-color: rgba(255, 255, 255, 0.5);
@@ -142,88 +141,84 @@ button:hover {
 
 .humidity {
   display: block;
-  margin: 0 auto;
-  margin-top: 20px;
+  margin: 10px auto;
+  margin-bottom: -5px;
   font-size: 16px;
   color: black;
-  padding: 10px;
-  background-color: rgba(181, 205, 195, 0.8);
+  padding: 5px;
+  background-color: rgba(181, 205, 195, 0.7);
   border-radius: 15px;
-  width: 200px;
+  width: 225px;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .humidity-data {
   display: block;
   margin: 0 auto;
-  margin-bottom: -20px;
-  font-size: 16px;
-  padding: 5px;
+  font-size: 14px;
+  padding: 2px;
   color: black;
-  background-color: rgba(181, 205, 195, 0.99);
+  background-color: rgba(181, 205, 195, 1);
   border-radius: 15px;
-  padding-right: 18px;
-  width: 75px;
-  height: 36px;
-  text-align: right;
+  width: 80px;
+  text-align: center;
   position: relative;
-  top: -41px;
-  right: -56px;
+  top: -24px;
+  right: -68px;
 }
 
 .wind {
   display: block;
-  margin: 0 auto;
-  margin-bottom: -10px;
-  font-size: 16px;
+  margin: -12px auto;
+  font-size: 15px;
   color: black;
-  padding: 10px;
-  padding-right: 38px;
-  background-color: rgba(173, 127, 147, 0.8);
+  padding: 5px;
+  background-color: rgba(173, 127, 147, 0.7);
   border-radius: 15px;
-  width: 200px;
+  width: 225px;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
 }
+
 .wind-data {
   display: block;
   margin: 0 auto;
-  font-size: 16px;
-  padding: 5px;
+  font-size: 14px;
+  padding: 2px;
   color: black;
   background-color: rgba(173, 127, 147, 0.99);
   border-radius: 15px;
-  width: 75px;
-  height: 36px;
+  width: 80px;
   text-align: center;
   position: relative;
-  top: -30px;
-  right: -56px;
+  top: -18px;
+  right: -68px;
 }
+
 .weather-box {
   display: block;
   margin: 0 auto;
   text-align: center;
   color: black;
   padding: 5px;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(181, 205, 195, 0.5);
   border-radius: 5px;
   margin: 0px;
-  width: 50px;
+  width: 85px;
   height: 125px;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .forecast-date {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .forecast-temperature-min {
-  font-size: 13px;
+  font-size: 14px;
   opacity: 0.7;
 }
 
 .forecast-temperature-max {
-  font-size: 13px;
+  font-size: 15px;
 }
 
 .last-updated {
@@ -248,6 +243,7 @@ button:hover {
 
 .rain-icon {
   color: white;
+  padding: 5px;
 }
 
 .therm-icon {
@@ -255,6 +251,7 @@ button:hover {
 }
 .wind-icon {
   color: white;
+  padding: 5px;
 }
 
 .units {

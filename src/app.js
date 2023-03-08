@@ -38,7 +38,7 @@ if (minutes < 10) {
 }
 
 let dayTime = document.querySelector("h2");
-dayTime.innerHTML = `Last Updated: ${day}, ${month} ${date} at ${hours}:${minutes}`;
+dayTime.innerHTML = `<strong> Last Updated:</strong> ${day}, ${month} ${date} at ${hours}:${minutes}`;
 
 ///Forecast Dates
 function formatDay(timestamp) {
@@ -56,11 +56,11 @@ function displayForecast(response) {
 
   let forecastHTML = `<div class="row">`;
   forecast.forEach(function (forecastDay, index) {
-    if (index < 6) {
+    if (index < 4) {
       forecastHTML =
         forecastHTML +
         `
-  <div class="col-2">
+  <div class="col-3">
       <div class= "weather-box"> 
   <div class="forecast-date"> ${formatDay(forecastDay.dt)}</div>
       <img src="http://openweathermap.org/img/wn/${
