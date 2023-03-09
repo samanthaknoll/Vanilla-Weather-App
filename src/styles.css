@@ -45,7 +45,7 @@ input[type="text"] {
   font-size: 15px;
   border-radius: 15px;
   padding: 10px 12px;
-  width: 280px;
+  width: 250px;
   height: 38px;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
 }
@@ -54,7 +54,7 @@ input[type="submit"] {
   margin: 0 auto;
   margin-left: 10px;
   height: 40px;
-  width: 95px;
+  width: 80px;
   background-color: rgba(181, 205, 195, 0.4);
   color: black;
   text-align: center;
@@ -274,7 +274,12 @@ button:hover {
 }
 
 a:hover {
-  color: rgba(234, 182, 169, 1);
+  color: black;
+}
+
+.link {
+  color: rgba(173, 127, 147, 1);
+  text-decoration: none;
 }
 
 .delete-gap {
