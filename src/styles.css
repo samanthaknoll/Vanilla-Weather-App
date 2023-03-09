@@ -78,7 +78,7 @@ input::placeholder {
 button {
   display: block;
   margin: 0px auto;
-  margin-top: -10px;
+  margin-top: 10px;
   background: rgba(173, 127, 147, 0.5);
   border: 0px;
   color: black;
@@ -242,8 +242,8 @@ button:hover {
 .search-icon {
   color: white;
   position: relative;
-  left: 245px;
-  top: -29px;
+  left: -130px;
+  top: 2px;
   font-size: 20px;
 }
 
@@ -274,12 +274,11 @@ button:hover {
 }
 
 a:hover {
-  color: black;
+  color: rgba(173, 127, 147, 1);
 }
 
 .link {
-  color: rgba(173, 127, 147, 1);
-  text-decoration: none;
+  color: black;
 }
 
 .delete-gap {
