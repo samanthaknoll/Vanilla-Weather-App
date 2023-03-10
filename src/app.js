@@ -115,7 +115,7 @@ function getForecast(coordinates) {
 function showIcon(response) {
   let iconElement = document.querySelector("#icon");
   let iconCode = response.data.weather[0].icon;
-  let iconUrl = `http://openweathermap.org/img/wn/${iconCode}.png`;
+  let iconUrl = `http://openweathermap.org/img/wn/$%7BiconCode%7D@2x.png`;
   iconElement.setAttribute("src", iconUrl);
   iconElement.setAttribute("alt", response.data.weather[0].description);
 
